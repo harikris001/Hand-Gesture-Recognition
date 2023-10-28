@@ -21,6 +21,3 @@ yarn-debug.log*
 yarn-error.log*
 
 # other
-src/service-worker.js
-src/serviceWorkerRegistration.js
-src/utils.js
