@@ -154,6 +154,7 @@ function App() {
           }} />
 
         {emoji !== null ? (
+          <>
           <img
             src={images[emoji]}
             style={{
@@ -167,6 +168,8 @@ function App() {
               height: 100,
             }}
           />
+          <p>{emoji}</p>
+          </>
         ) : (
           ""
         )}
