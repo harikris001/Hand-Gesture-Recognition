@@ -21,9 +21,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # other
-src/gestures/
-src/img
-src/index.js
 src/service-worker.js
 src/serviceWorkerRegistration.js
 src/utils.js
