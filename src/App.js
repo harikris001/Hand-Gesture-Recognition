@@ -138,7 +138,7 @@ function App() {
             textAlign: "center",
             zindex: 9,
             width: 640,
-            height: 480
+            height: 480,
           }} />
         <canvas ref={canvasRef}
           style={{
@@ -150,11 +150,11 @@ function App() {
             textAlign: "center",
             zindex: 9,
             width: 640,
-            height: 480
+            height: 480,
           }} />
 
         {emoji !== null ? (
-          <>
+          <span >
           <img
             src={images[emoji]}
             style={{
@@ -168,8 +168,18 @@ function App() {
               height: 100,
             }}
           />
-          <p>{emoji}</p>
-          </>
+          <p
+          style={{
+            zindex: 9,
+            left: 725,
+            bottom: 100,
+            position: "absolute", 
+            fontFamily: "serif",
+            backgroundColor: "#ffcc00",
+            color: "black",
+
+          }}>{emoji}</p>
+          </span>
         ) : (
           ""
         )}

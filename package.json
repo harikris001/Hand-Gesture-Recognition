@@ -1,5 +1,5 @@
 {
-  "name": "gesture-recognition",
+  "name": "hand-gesture-recognition",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
