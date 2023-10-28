@@ -127,7 +127,21 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
+      <h1
+        style={{
+          fontFamily: "Raleway, Oswald", /* Apply the same font-family */
+          fontSize: "3rem", /* Adjust the font size as needed */
+          margin: "0", /* Remove any default margin */
+          position: "absolute", /* Position the element absolutely */
+          top: "20px", /* Adjust the top spacing as needed */
+          left: "20px", /* Adjust the left spacing as needed */
+        }}
+      >
+        <span style={{color:"yellow",fontWeight: "normal" }}>sign</span>
+        <span style={{ fontWeight: "bold" }}>Ease</span>
+      </h1>
+      
         <Webcam ref={webcamRef}
           style={{
             position: "absolute",
@@ -151,6 +165,9 @@ function App() {
             zindex: 9,
             width: 640,
             height: 480,
+            border: "2px solid #000",
+            borderRadius: "10px",
+            boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)"
           }} />
 
         {emoji !== null ? (
@@ -183,7 +200,7 @@ function App() {
         ) : (
           ""
         )}
-      </header>
+      </div>
     </div>
   );
 }
